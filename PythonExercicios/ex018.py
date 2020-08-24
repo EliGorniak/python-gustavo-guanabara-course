@@ -1,10 +1,23 @@
-# Escreva um programa que pergunte a quantidade de KM percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por KM rodado:
+# Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.
 
-km = float(input('Quantos kilometros você percorreu? '))
-dias = int(input('Por quantos dias ele foi alugado? '))
-custokmrodado = 0.15
-custoaluguel = 60
-totalapagar = (km*custokmrodado) + (dias*custoaluguel)
-print('O valor a pagar é de R$ {:0.2f}'.format(totalapagar))
+# 1ª opção: com importação da biblioteca Math inteira
+import math
+angulo = float(input("Digite o ângulo: "))
+s = math.sin(math.radians(angulo))
+c = math.cos(math.radians(angulo))
+t = math.tan(math.radians(angulo))
+print('O SENO de {} é {:.2f}'.format(angulo, s))
+print('O COSSENO de {} é {:.2f}'.format(angulo, c))
+print('A TANGENTE de {} é {:.2f}'.format(angulo, t))
+
+# 2ª opção: com importação de métodos específicos dentro da biblioteca Math
+from math import radians, sin, cos, tan
+sen = sin(radians(angulo))
+cos = cos(radians(angulo))
+tan = tan(radians(angulo))
+print('O SENO de {} é {:.2f}'.format(angulo, sen))
+print('O COSSENO de {} é {:.2f}'.format(angulo, cos))
+print('A TANGENTE de {} é {:.2f}'.format(angulo, tan))
+
 
 

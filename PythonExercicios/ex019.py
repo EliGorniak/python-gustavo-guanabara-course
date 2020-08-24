@@ -1,10 +1,12 @@
-# Escreva um programa que pergunte a quantidade de KM percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por KM rodado:
+# Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.
 
-km = float(input('Quantos kilometros você percorreu? '))
-dias = int(input('Por quantos dias ele foi alugado? '))
-custokmrodado = 0.15
-custoaluguel = 60
-totalapagar = (km*custokmrodado) + (dias*custoaluguel)
-print('O valor a pagar é de R$ {:0.2f}'.format(totalapagar))
-
+# usando o método random (aleatório)
+import random
+aluno1 = str(input('O primeiro aluno é: '))
+aluno2 = str(input('O segundo aluno é: '))
+aluno3 = str(input('O terceiro aluno é: '))
+aluno4 = str(input('O quarto aluno é: '))
+lista = [aluno1, aluno2, aluno3, aluno4]
+escolhido = random.choice(lista)
+print('O aluno sorteado é {}!'.format(escolhido))
 

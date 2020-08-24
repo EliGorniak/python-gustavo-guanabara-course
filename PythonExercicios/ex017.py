@@ -1,10 +1,17 @@
-# Escreva um programa que pergunte a quantidade de KM percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por KM rodado:
+# Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa.
 
-km = float(input('Quantos kilometros você percorreu? '))
-dias = int(input('Por quantos dias ele foi alugado? '))
-custokmrodado = 0.15
-custoaluguel = 60
-totalapagar = (km*custokmrodado) + (dias*custoaluguel)
-print('O valor a pagar é de R$ {:0.2f}'.format(totalapagar))
+# 1º opção: sem utilizar a biblioteca Math
+co = float(input('Indique o comprimento do cateto oposto: '))
+ca = float(input('Indique o comprimento do cateto adjacente: '))
+hip = (co**2 + ca**2) **(1/2)
+print('O valor da hipotenusa é {:.2f}'.format(hip))
+
+
+# 2ª opção: importação de um método específico dentro da biblioteca Math
+import math
+cop = float(input('Indique o comprimento do cateto oposto: '))
+cad = float(input('Indique o comprimento do cateto adjacente: '))
+hipo = math.hypot(cop, cad)
+print('O valor da hipotenusa é {:.2f}'.format(hipo))
 
 

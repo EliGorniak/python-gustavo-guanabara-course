@@ -1,10 +1,14 @@
-# Escreva um programa que pergunte a quantidade de KM percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por KM rodado:
+# O mesmo professor do desafio 019 quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 
-km = float(input('Quantos kilometros você percorreu? '))
-dias = int(input('Por quantos dias ele foi alugado? '))
-custokmrodado = 0.15
-custoaluguel = 60
-totalapagar = (km*custokmrodado) + (dias*custoaluguel)
-print('O valor a pagar é de R$ {:0.2f}'.format(totalapagar))
+# usando módulo random.shuffle para embaralhar a lista e mostrar essa lista nesta nova ordem:
+from random import shuffle
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+# random.shuffle(lista) sem importar unicamente o metodo shuffle
 
+shuffle(lista) #importando apenas o método shuffle
+print('A ordem de apresentação dos trabalhos será: {}.', format(lista))
 
