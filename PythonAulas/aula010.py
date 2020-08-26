@@ -10,4 +10,4 @@ else:
     print('Estude mais ok!')
 
 # outra forma de escrever mais compactado é:
-print('Parabéns!' if media >= 6 else 'Estude mais!')
+# print('Parabéns!' if media >= 6 else 'Estude mais!')

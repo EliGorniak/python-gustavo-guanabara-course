@@ -7,6 +7,7 @@ print(frase[9]) # mostra o caractere inserido na posição 9 da string
 print(frase[9:14]) # mostra os caracteres inseridos nas posições 9 até 12 da string, o 14 ele exclui
 print(frase[9:21]) # mostra os caracteres inseridos nas posições 9 até 20, já que 21 ele exclui
 print(frase[9:21:2]) # mostra os caracteres inseridos nas posições 9 até 20, não mostra o 21 e pula de 2 em 2
+print(frase[5:]) # mostra os caracteres começando da posição 5 até o final
 print(frase[:5]) # mostra os caracteres começando da posição 0 até o 4
 print(frase[15:]) # mostra o caractere inserido da posição 15 até o final
 print(frase[9::3]) # mostra o caractere começando da posição 9 até o final:: mas vai pulando de 3 em 3
